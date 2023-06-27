@@ -1,1 +1,15 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --font-1: 'Rajdhani', sans-serif;
+    --font-2: 'Nunito', sans-serif;
+    --color-dark: #1a1a1a;
+    --color-yellow: #FACD48;
+    --color-gray: #DADADA;
+}
+html {
+    font-size: 62.5%;
+}

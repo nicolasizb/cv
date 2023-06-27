@@ -1,0 +1,114 @@
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 4rem;
+    background-color: var(--color-dark);
+    font-family: var(--font-2);
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    word-spacing: 0.3rem;
+    color: var(--color-gray);
+
+    > div {
+        .ft-o {
+            margin: 2rem 0 0.5rem;
+            font-family: var(--font-1);
+            font-size: medium;
+            font-weight: 600;
+        }
+        .ty {
+            font-size: 1.8rem;
+            color: var(--color-yellow);
+        }
+        .ctr--o {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            text-align: center;
+
+            .o__ti {
+                padding: 2rem 0 3rem;
+                font-size: 5rem;
+                font-weight: 800;
+                line-height: 4rem;
+            }
+            .o__ctr {
+                .lk {
+                    margin: 0 auto 1rem auto;
+                    display: flex;
+                    width: 2.4rem;
+                    height: 2.4rem;
+                    background-image: url('../assets/icons/icon-linkedin.svg.png');
+                    background-position: center;
+                    background-size: contain;
+                }
+            }
+        }
+        .ctr--tw {
+            display: flex;
+            align-items: center;
+
+            .tw__ctr--lf {
+                width: 40%;
+                margin: 0 auto;
+                .ctr--op {
+                    ul {
+                        padding: 0 3rem;
+                        .ls {
+                            font-size: 1.3rem;                            
+                        }
+                        .lt {
+                            font-weight: 800;
+                            font-size: 1.6rem;
+                            color: white;
+                        }
+                        .ln {
+                            list-style: none;
+                        }
+                        .pp {
+                            padding: 0 0 2rem;
+                        }
+                    }                    
+                }
+            }
+            .tw__ctr--rg {
+                width: 40%;
+                margin: 0 auto;
+
+                .rg__le {
+                    padding-bottom: 2rem;
+
+                    .tl {
+                        padding: 0 0 0.5rem;
+                        color: white;
+                        font-weight: 800;
+                    }
+                    .le {
+                        display: flex;
+                        justify-content: space-between;
+                        width: 20rem;
+                        padding: 0 3rem;
+    
+                        .yl {
+                            margin: 0 auto;
+                            color: var(--color-yellow);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .ctr--o {
+        flex-direction: column;
+    } 
+    .ctr--tw {
+        flex-direction: column;
+    }
+}
